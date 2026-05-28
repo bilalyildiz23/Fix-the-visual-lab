@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #14213d;
+  background: #e7eee9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(rgba(23, 37, 84, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 37, 84, 0.035) 1px, transparent 1px),
+    linear-gradient(135deg, #edf4ef 0%, #e7eef7 46%, #f4efe5 100%);
+  background-size: 34px 34px, 34px 34px, auto;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.lab-card {
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.09);
+  backdrop-filter: blur(10px);
+}
+
+.focus-ring {
+  outline: 3px solid rgba(37, 99, 235, 0.18);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
